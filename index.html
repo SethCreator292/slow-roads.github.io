@@ -1,7 +1,39 @@
-<iframe src="https://lumassets.pages.dev/slowroads/"
-        width="100%" height="600"
-        style="border: none; overflow: hidden;"
-        scrolling="no" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slow Roads Embed</title>
+  <style>
+    .responsive-iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .responsive-iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="responsive-iframe-container">
+    <iframe 
+      src="https://lumassets.pages.dev/slowroads/" 
+      allowfullscreen 
+      loading="lazy"
+      sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-forms">
+    </iframe>
+  </div>
+
+</body>
+</html>
+
 
